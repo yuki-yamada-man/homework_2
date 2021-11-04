@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+      <div class="introduce">
+        <h1><p>Welcome to <string>Bookers !!</string></p></h1>
+        <p>このサイトでは、あなたが書籍に関する印象や感想を他のユーザーと印象や感想を交換したり、</p>
+        <p>情報を共有することができます。</p>
+        <p>それでは快適な本の世界ご堪能ください！！</p>
+      </div>
+
+      <div>
+        <%= link_to "Log in",new_user_session_path, class: "btn btn-info btn-sm btn-block mb-3 sign_in" %>
+      </div>
+      <div>
+        <%= link_to "Sign up",new_user_registration_path, class: "btn btn-success btn-sm btn-block mb-3 sign_in" %>
+      </div>
+    </div>
+  </div>
+</div>
