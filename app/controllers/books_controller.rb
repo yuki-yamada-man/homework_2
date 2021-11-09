@@ -5,10 +5,10 @@ class BooksController < ApplicationController
   end
 
   def create
-    @book_new = Book.new
-    @book_new.user.id = current_user.id
-    if @book.save(book_params)
-      redirect_to book_path(@book.id)
+    @book_new = Book.new(book.params)
+    @book_new.user_id = current_user.id
+    if @book_new.save
+      redirect_to book_path(@book_new.id)
     else
       @user = current_user
       @books = Book.all

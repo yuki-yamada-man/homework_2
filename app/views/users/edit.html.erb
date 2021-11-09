@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto" >
-      <h2>User info</h2>
-       <%= form_with model:@user local:true do %>
+      <h2>Edit of user info</h2>
+       <%= form_with model: @user, local:true do |f|%>
        <h3>Name</h3>
        <%= f.text_field:name %>
        <h3>Introducution</h3>
